@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties</title>
+    <style>
+        my-element {
+            --primary-color: #4f90d1;
+            --heading-primary: 33px; 
+        }
+
+        .segundo {
+            --primary-color: #a03b3b;
+        }
+    </style>
+</head>
+<body>
+    
+    <my-element>
+        <span slot="header">Hola desde un h1</span>
+        <span slot="title">Hola desde un componente 1</span>
+        <span slot="paragraph">Soy un texto to chiquito</span>
+    </my-element>
+    <my-element>
+        <span slot="header">Hola desde un h1</span>
+        <span slot="title">Hola desde un componente 2</span>
+        <span slot="paragraph">Soy un texto to chiquito</span>
+    </my-element>
+    <my-element class="segundo">
+        <span slot="header">Hola desde un h1</span>
+        <span slot="title">Hola desde un componente 3</span>
+        <span slot="paragraph">Soy un texto to chiquito</span>
+    </my-element>
+
+    <script src="./my-element.js"></script>
+</body>
+</html>
